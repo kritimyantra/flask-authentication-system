@@ -11,3 +11,5 @@
 
 # Dashboard page
 ![alt text](https://github.com/kritimyantra/flask-authentication-system/blob/main/dashboard.png?raw=true)
+
+![Screenshot](dashboard.png)
