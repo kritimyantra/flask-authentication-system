@@ -27,7 +27,7 @@ with app.app_context():
 
 @app.route('/')
 def index():
-    return 'hi'
+    return render_template('index.html')
 
 @app.route('/register',methods=['GET','POST'])
 def register():
@@ -65,7 +65,7 @@ def login():
 
 @app.route('/dashboard')
 def dashboard():
-    if session['name']:
+    if session['email']:
         user = User.query.filter_by(email=session['email']).first()
         return render_template('dashboard.html',user=user)
     
